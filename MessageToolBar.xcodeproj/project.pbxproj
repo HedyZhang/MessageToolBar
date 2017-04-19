@@ -13,6 +13,7 @@
 		5349394B1EA76F7A00C87861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534939491EA76F7A00C87861 /* Main.storyboard */; };
 		5349394D1EA76F7A00C87861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5349394C1EA76F7A00C87861 /* Assets.xcassets */; };
 		534939501EA76F7A00C87861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5349394E1EA76F7A00C87861 /* LaunchScreen.storyboard */; };
+		534939591EA76F9100C87861 /* YSMessageToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 534939581EA76F9100C87861 /* YSMessageToolBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5349394C1EA76F7A00C87861 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5349394F1EA76F7A00C87861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		534939511EA76F7A00C87861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534939571EA76F9100C87861 /* YSMessageToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMessageToolBar.h; sourceTree = "<group>"; };
+		534939581EA76F9100C87861 /* YSMessageToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMessageToolBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				534939441EA76F7A00C87861 /* AppDelegate.m */,
 				534939461EA76F7A00C87861 /* ViewController.h */,
 				534939471EA76F7A00C87861 /* ViewController.m */,
+				534939571EA76F9100C87861 /* YSMessageToolBar.h */,
+				534939581EA76F9100C87861 /* YSMessageToolBar.m */,
 				534939491EA76F7A00C87861 /* Main.storyboard */,
 				5349394C1EA76F7A00C87861 /* Assets.xcassets */,
 				5349394E1EA76F7A00C87861 /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				534939481EA76F7A00C87861 /* ViewController.m in Sources */,
+				534939591EA76F9100C87861 /* YSMessageToolBar.m in Sources */,
 				534939451EA76F7A00C87861 /* AppDelegate.m in Sources */,
 				534939421EA76F7A00C87861 /* main.m in Sources */,
 			);
@@ -278,7 +284,7 @@
 				DEVELOPMENT_TEAM = 22R5TS4DAZ;
 				INFOPLIST_FILE = MessageToolBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghaidi.MessageToolBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghaidi.ConnectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -290,7 +296,7 @@
 				DEVELOPMENT_TEAM = 22R5TS4DAZ;
 				INFOPLIST_FILE = MessageToolBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghaidi.MessageToolBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhanghaidi.ConnectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

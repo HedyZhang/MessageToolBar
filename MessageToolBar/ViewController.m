@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "YSMessageToolBar.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<YSMessageToolBarDelegate>
+
+@property (nonatomic, strong) UITableView *listView;
+@property (nonatomic, strong) YSMessageToolBar *chatToolbar;
 
 @end
 
@@ -16,9 +21,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+   
+    [self.view addSubview:self.chatToolbar];
+
 }
 
+
+- (void)didSendText:(NSString *)text {
+    
+}
+
+- (void)didChangeFrameToHeight:(CGFloat)toHeight {
+    
+}
+
+#pragma mark - Getter
+
+- (YSMessageToolBar *)chatToolbar {
+    if (!_chatToolbar) {
+        _chatToolbar = [[YSMessageToolBar alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - [YSMessageToolBar defaultHeight], self.view.frame.size.width, [YSMessageToolBar defaultHeight])];
+        _chatToolbar.delegate = self;
+        [_chatToolbar.sendButton setTitle:@"发送" forState:UIControlStateNormal];
+        _chatToolbar.inputTextView.placeholder = @"发送消息";
+        _chatToolbar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin;
+    }
+    return _chatToolbar;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
